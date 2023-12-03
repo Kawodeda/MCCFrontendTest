@@ -1,16 +1,18 @@
 import './App.css';
 import { TreeNode } from './model/TreeNode';
-import Tree from './components/Tree';
+import TreeViewer from './components/TreeViewer';
 
-const tree = new TreeNode('root', [
-    new TreeNode('1-1', [new TreeNode('2-1'), new TreeNode('2-2')]),
-    new TreeNode('1-2')
+const tree = new TreeNode('Node 1', [
+    new TreeNode('Node 2', [new TreeNode('Node 3'), new TreeNode('Node 4')]),
+    new TreeNode('Node 5')
 ]);
 
 function App(): JSX.Element {
     return (
-        <div>
-            <Tree model={tree}></Tree>
+        <div
+            style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}
+        >
+            <TreeViewer tree={tree}></TreeViewer>
         </div>
     );
 }

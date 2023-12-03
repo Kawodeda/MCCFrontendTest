@@ -1,0 +1,9 @@
+.children-container {
+    padding: 0 0 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.invisible {
+    visibility: hidden;
+}

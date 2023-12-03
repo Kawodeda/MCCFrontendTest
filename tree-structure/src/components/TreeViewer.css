@@ -1,0 +1,24 @@
+.tree-viewer {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px 0 5px 5px;
+}
+
+.toolbar {
+    border-top: none;
+}
+
+.toolbar > button {
+    background: none;
+    margin-right: 5px;
+    font-size: large;
+}
