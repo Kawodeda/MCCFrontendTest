@@ -1,8 +1,13 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
+
+function getPromise() {
+    return new Promise((resolve) => resolve(1));
+}
 
 function App() {
+    getPromise();
+
     return (
         <div className="App">
             <header className="App-header">
